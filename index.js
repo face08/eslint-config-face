@@ -1,3 +1,3 @@
 module.exports = {
-  extends: [require.resolve("./configs/base")]
+  extends: ["plugin:prettier/recommended", require.resolve("./configs/base")]
 };
