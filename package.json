@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm install babel-eslint eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-promise eslint-plugin-prettier prettier"
+    "postinstall": "cd ../ && npm install babel-eslint eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-promise eslint-plugin-prettier prettier"
   },
   "keywords": [],
   "author": "",
