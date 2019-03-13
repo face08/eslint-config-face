@@ -1,4 +1,4 @@
-### 安装
+### install
 
 - npm install -D babel-eslint eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-promise eslint-plugin-prettier prettier
 - npm link eslint-config-face stylelint-config-face
