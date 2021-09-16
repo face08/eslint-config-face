@@ -177,7 +177,7 @@ module.exports = {
     ],
     // 要求函数圆括号之前有一个空格，比如 function () {} 或 function aaa() {}
     "space-before-function-paren": [
-      "warn",
+      "off",
       {
         anonymous: "always",
         named: "never"
@@ -210,7 +210,7 @@ module.exports = {
       }
     ],
     // 禁止使用内联注释
-    "no-inline-comments": "warn",
+    "no-inline-comments": "off",
     // 不允许多个空行
     "no-multiple-empty-lines": [
       "warn",
@@ -286,7 +286,7 @@ module.exports = {
       "warn",
       {
         prefer: {
-          returns: "return",
+          returns: "returns",
           arg: "param",
           argument: "param"
         },

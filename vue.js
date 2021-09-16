@@ -2,7 +2,7 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint"
   },
-  extends: ["plugin:vue/recommended", require.resolve("./configs/base")],
+  extends: ["prettier/vue","plugin:vue/recommended", require.resolve("./configs/base")],
   rules: {
     "max-len": [
       "error",
