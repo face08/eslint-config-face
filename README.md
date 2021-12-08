@@ -1,5 +1,17 @@
-# vscode
-install plugins eslint,vetur
+# vscode 
+install plugins eslint,vetur 
+* v > 1.41.0
+```json
+"eslint.alwaysShowStatus": true,
+"eslint.quiet": true,
+"eslint.format.enable": true,
+"eslint.validate": ["javascript", "vue", "html"],
+"editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+}
+```
+* old version
 ```json
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
@@ -19,10 +31,14 @@ install plugins eslint,vetur
     }
   ]
 ```
-# node
-### install 
 
-- npm install -D babel-eslint eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-promise eslint-plugin-prettier prettier eslint-config-face
+# install
+
+- npm i  install-peerdeps eslint-config-face -D
+- npx install-peerdeps eslint-config-face -D
+
+
+# node
 
 ### package.json
 .prettierrc.js and .eslintrc.js
@@ -53,8 +69,6 @@ install plugins eslint,vetur
 ```
 
 # vue
-### install 
-- npm install -D babel-eslint eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-promise eslint-plugin-prettier prettier  eslint-config-face
 ### package.json
 ```json
   "eslintConfig": {
@@ -76,11 +90,6 @@ install plugins eslint,vetur
 ```
 
 # typescript
-### install 
-```js
-npm install -D  @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint eslint-config-prettier eslint-plugin-prettier prettier typescript  eslint-plugin-promise eslint-config-face
-```
-
 ### package.json
 ```json
   "eslintConfig": {
@@ -100,3 +109,10 @@ npm install -D  @typescript-eslint/parser @typescript-eslint/eslint-plugin eslin
     "arrowParens": "always"
   },
 ```
+
+# reference
+* https://juejin.cn/post/6844904068746313736
+* https://juejin.cn/post/6926456864276873230
+* http://www.verydoc.net/eslint/00003582.html
+
+

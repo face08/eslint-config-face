@@ -1,13 +1,12 @@
-
 module.exports = {
     extends: [
+        "plugin:@typescript-eslint/recommended",// 插件里的规则
+        "airbnb-base",
         "plugin:prettier/recommended",
-        'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
         require.resolve("./configs/base")
     ],
     parser: "@typescript-eslint/parser",
-    plugins: ['@typescript-eslint'],
+    plugins: ["@typescript-eslint", "prettier"],
     rules: {
         'no-undef': 'off',
         'no-unused-vars': 'off',
@@ -16,6 +15,10 @@ module.exports = {
         /*
         * typescript
         */
+        'import/no-unresolved': 'off',
+        'import/extensions': 'off',
+        'import/prefer-default-export': 'off',
+        "@typescript-eslint/no-inferrable-types": "off" ,
         '@typescript-eslint/explicit-member-accessibility': 'off',
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/explicit-function-return-type': 'off',
